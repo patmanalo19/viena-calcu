@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: Poppins;
+}
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.CalcContainer {
+  width: 500px;
+  height: 700px;
+  margin: 4% auto;
+  border: #1f1f1f solid 1px;
+  border-radius: 60px;
+  padding: 35px 30px 0px;
+  background-color: #000000;
+}
+
+.CalcDisplay {
+  border: 2px solid #464646;
+  border-radius: 40px;
+  height: 100px;
+  font-size: 2em;
+  margin-bottom: 2px;
+  padding: 10px;
+  margin-bottom: 35px;
+  text-align: right;
+  background: rgb(36, 36, 36);
+  color: white;
+  font-size: 74px;
+  font-weight: 500;
+}
+
+.ButtonContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ButtonContainer > button {
+  justify-content: center;
+  border: 2px solid #2e2e2e;
+  font-size: 2em;
+  background-color: #1c1c1c;
+  padding: 33px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  color: white;
+  font-weight: 300;
+}
+
+.ButtonContainer > button:hover {
+  filter: brightness(160%);
+}
+
+/* CLR */
+.ButtonContainer > button:nth-child(13) {
+  background-color: rgb(158, 158, 158);
+  color: black;
+  font-weight: 600;
+  border: 2px solid #dddddd;
+}
+
+/* = */
+.ButtonContainer > button:nth-child(15) {
+  background-color: rgb(26, 169, 169);
+  font-weight: 600;
+  border: 2px solid #79f4ff;
+}
+
+/* OP */
+.ButtonContainer > button:nth-child(4),
+.ButtonContainer > button:nth-child(8),
+.ButtonContainer > button:nth-child(12),
+.ButtonContainer > button:nth-child(16) {
+  background-color: rgb(53, 92, 92);
+  font-weight: 600;
+  border: 3px solid #476c6f;
+}
+
